@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   left: 0;
   right: 0;
   width: auto;
@@ -45,7 +45,7 @@ h2 {
   margin: 10px 0 0 0;
   padding: 0;
   font-weight: bold;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 h3 {
@@ -53,7 +53,7 @@ h3 {
   margin: 10px 0 0 0;
   padding: 0;
   font-weight: bold;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 ul,
@@ -111,7 +111,7 @@ hr {
 
 .logo a {
   color: rgba(255, 255, 255, 0.8);
-  font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans Condensed", Helvetica, Arial, sans-serif;
   font-size: 30px;
   text-decoration: none;
   font-weight: 700;
@@ -140,7 +140,7 @@ hr {
   transition: opacity 0.1s ease-in-out;
   -moz-transition: opacity 0.1s ease-in-out;
   -webkit-transition: opacity 0.1s ease-in-out;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   white-space: nowrap;
 }
 
@@ -149,7 +149,7 @@ hr {
 }
 
 .menu-items a:hover {
-  color: rgb(255, 255, 255);
+  color: green;
   opacity: 1;
 }
 
@@ -164,7 +164,7 @@ hr {
   position: relative;
   margin: 0 auto;
   font-size: 16px;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.5;
   max-width: 900px;
@@ -374,7 +374,7 @@ ol.publication.C-list li p {
 }
 
 ol.publication.C-list li p:before {
-  content: "[C"counter(C-counter)"]";
+  content: "[C" counter(C-counter) "]";
 }
 
 ol.publication.J-list {
@@ -386,7 +386,7 @@ ol.publication.J-list li p {
 }
 
 ol.publication.J-list li p:before {
-  content: "[J"counter(J-counter)"]";
+  content: "[J" counter(J-counter) "]";
 }
 
 ol.publication.T-list {
@@ -398,7 +398,7 @@ ol.publication.T-list li p {
 }
 
 ol.publication.T-list li p:before {
-  content: "[T"counter(T-counter)"]";
+  content: "[T" counter(T-counter) "]";
 }
 
 ol.publication.O-list {
@@ -410,7 +410,7 @@ ol.publication.O-list li p {
 }
 
 ol.publication.O-list li p:before {
-  content: "[O"counter(O-counter)"]";
+  content: "[O" counter(O-counter) "]";
 }
 
 ol.publication.P-list {
@@ -422,7 +422,7 @@ ol.publication.P-list li p {
 }
 
 ol.publication.P-list li p:before {
-  content: "[P"counter(P-counter)"]";
+  content: "[P" counter(P-counter) "]";
 }
 
 ol.publication.M-list {
@@ -434,7 +434,7 @@ ol.publication.M-list li p {
 }
 
 ol.publication.M-list li p:before {
-  content: "[M"counter(M-counter)"]";
+  content: "[M" counter(M-counter) "]";
 }
 
 ol.publication.F-list {
@@ -446,7 +446,7 @@ ol.publication.F-list li p {
 }
 
 ol.publication.F-list li p:before {
-  content: "[F"counter(F-counter)"]";
+  content: "[F" counter(F-counter) "]";
 }
 
 ol.publication.A-list {
@@ -458,7 +458,7 @@ ol.publication.A-list li p {
 }
 
 ol.publication.A-list li p:before {
-  content: "[A"counter(A-counter)"]";
+  content: "[A" counter(A-counter) "]";
 }
 
 ol.nested {
@@ -466,7 +466,7 @@ ol.nested {
   counter-reset: item;
 }
 
-ol.nested>li:before {
+ol.nested > li:before {
   counter-increment: item;
   content: counters(item, ".") ". ";
   padding-right: 0.6em;
@@ -612,8 +612,8 @@ ol.nested>li:before {
   user-select: none;
 }
 
-.gallery a>img,
-.gallery a>video {
+.gallery a > img,
+.gallery a > video {
   border-radius: 2px;
   width: 100%;
   background-image: url(../img/loading.gif);
@@ -623,7 +623,7 @@ ol.nested>li:before {
   min-height: 50px;
 }
 
-.gallery a>div {
+.gallery a > div {
   width: 100%;
   text-align: center;
 }
@@ -786,11 +786,11 @@ ol.nested>li:before {
     pointer-events: none;
   }
 
-  .menu-button:focus+.menu-items {
+  .menu-button:focus + .menu-items {
     display: block;
   }
 
-  .menu-button:focus+.menu-items a {
+  .menu-button:focus + .menu-items a {
     display: block;
   }
 
@@ -798,7 +798,7 @@ ol.nested>li:before {
     display: block;
   }
 
-  .menu-items>a {
+  .menu-items > a {
     display: block;
   }
 
